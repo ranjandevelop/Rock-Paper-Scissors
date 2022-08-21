@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- FontAwesome -->
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div class="container">
+      <header id="header" class="header">
+        <h1>Rock Papper Scissor</h1>
+        <div class="scoreBoard">
+          <p>Player: <span id="playerScore">0</span></p>
+          <p>Computer: <span id="computerScore">0</span></p>
+        </div>
+      </header>
+      <h3>Make Your Selection</h3>
+      <main class="choices">
+        <button id="restart">Restart</button>
+        <img src="./img/hand-rock.svg" alt="rock" id="rock" class="choice" />
+        <img src="./img/hand-paper.svg" alt="paper" id="paper" class="choice" />
+        <img
+          src="./img/hand-scissors.svg"
+          alt="scissor"
+          id="scissors"
+          class="choice"
+        />
+        <!-- Modal (to diplay the result) -->
+        <div class="modal" id="modal">
+          <div class="modal-container">
+            <span id="result"></span>
+            <img src="" alt="" id="resultImg" />
+            <p id="result-text"></p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Main JS File -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
